@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F31C2C5-D0EE-4EE2-A22F-DA76A235F208}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ModiriatForoushgah</RootNamespace>
+    <AssemblyName>ModiriatForoushgah</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>C:\Users\HTC\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>395DD3D3B673D2B7FFEFFE65B2DC8A787A35A081</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ModiriatForoushgah_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\Anbardar.cs" />
+    <Compile Include="classes\Barbari.cs" />
+    <Compile Include="classes\Category.cs" />
+    <Compile Include="classes\Foroushande.cs" />
+    <Compile Include="classes\Login.cs" />
+    <Compile Include="classes\SabteForoush.cs" />
+    <Compile Include="classes\SabteKala.cs" />
+    <Compile Include="classes\Ranande.cs" />
+    <Compile Include="classes\TaminKonande.cs" />
+    <Compile Include="forms\FormBarbari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormBarbari.Designer.cs">
+      <DependentUpon>FormBarbari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\forms_kala\FormCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\forms_kala\FormCategory.Designer.cs">
+      <DependentUpon>FormCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\forms_kala\FormForoush.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\forms_kala\FormForoush.Designer.cs">
+      <DependentUpon>FormForoush.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\forms_kala\FormMoshahedeKalahayeVaredShode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\forms_kala\FormMoshahedeKalahayeVaredShode.Designer.cs">
+      <DependentUpon>FormMoshahedeKalahayeVaredShode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\forms_kala\FormSabteKala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\forms_kala\FormSabteKala.Designer.cs">
+      <DependentUpon>FormSabteKala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\forms_kala\GheymatGozariKala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\forms_kala\GheymatGozariKala.Designer.cs">
+      <DependentUpon>GheymatGozariKala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\forms_user\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\forms_user\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormTaminKonande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormTaminKonande.Designer.cs">
+      <DependentUpon>FormTaminKonande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormRanande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormRanande.Designer.cs">
+      <DependentUpon>FormRanande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormAnbardar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormAnbardar.Designer.cs">
+      <DependentUpon>FormAnbardar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormForoushande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormForoushande.Designer.cs">
+      <DependentUpon>FormForoushande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classes\Moshtari.cs" />
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="forms\FormMoshtari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormMoshtari.Designer.cs">
+      <DependentUpon>FormMoshtari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\forms_user\RegisterUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\forms_user\RegisterUser.Designer.cs">
+      <DependentUpon>RegisterUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\forms_user\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\forms_user\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="forms\FormBarbari.resx">
+      <DependentUpon>FormBarbari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\forms_kala\FormCategory.resx">
+      <DependentUpon>FormCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\forms_kala\FormForoush.resx">
+      <DependentUpon>FormForoush.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\forms_kala\FormMoshahedeKalahayeVaredShode.resx">
+      <DependentUpon>FormMoshahedeKalahayeVaredShode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\forms_kala\FormSabteKala.resx">
+      <DependentUpon>FormSabteKala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\forms_kala\GheymatGozariKala.resx">
+      <DependentUpon>GheymatGozariKala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\forms_user\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormTaminKonande.resx">
+      <DependentUpon>FormTaminKonande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormRanande.resx">
+      <DependentUpon>FormRanande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormAnbardar.resx">
+      <DependentUpon>FormAnbardar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormForoushande.resx">
+      <DependentUpon>FormForoushande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormMoshtari.resx">
+      <DependentUpon>FormMoshtari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\forms_user\RegisterUser.resx">
+      <DependentUpon>RegisterUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\forms_user\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ModiriatForoushgah_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
